@@ -8,10 +8,10 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 
 @bot.event
 async def on_ready():
-    print(f'Zalogowano jako {bot.user.name}')
+    print(f'Logged in as {bot.user.name}')
 
 @bot.command()
 async def ping(ctx):
     await ctx.send('Pong!')
 
-bot.run('TU_WKLEJ_TOKEN_BOTA')
+bot.run('PASTE_YOUR_BOT_TOKEN_HERE')
